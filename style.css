@@ -149,7 +149,7 @@ nav li a:hover {
   margin-bottom: 40px;
 }
 
-.hero-text button {
+ .hero-text button {
   background-color:#DF9DFE;
   color: #0D2D20;
   border: none;
@@ -159,13 +159,15 @@ nav li a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
-button:hover
+ button:hover
 {
   background-color:#D071FD;
 }
-.hero-text button a {
+ .hero-text button a {
   color: inherit;
   text-decoration: none;
+  position: relative;
+  z-index: 2; 
 }
 
 #about {

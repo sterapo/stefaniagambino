@@ -127,8 +127,10 @@ h3 {
   margin: 50px 150px;
 }
 .project-info img {
+  display: inline-block;
+  vertical-align: middle;
   max-height: 300px;
-  margin: 20px 150px;
+  margin-right: 10px;
 }
 
 
