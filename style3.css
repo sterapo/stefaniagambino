@@ -71,11 +71,10 @@ nav li a:hover {
   align-items: center;
   width: 100%;
   height: auto;
-  padding:130px 0px;
+  padding: 130px 0px;
   position: relative;
 }
 
-/* Back to home button */
 .back-to-home {
   background-color: transparent;
   border: none;
@@ -85,11 +84,11 @@ nav li a:hover {
   margin-left: 85px;
   color: #df9dfe;
   cursor: pointer;
-  text-transform: lowercase;
 }
 
 .back-to-home:hover {
   color: #D071FD;
+  font-size: 18px;
 }
 
 .back-to-home:hover path {
@@ -101,7 +100,6 @@ nav li a:hover {
 }
 
 
-/* Project info */
 .project-info {
   margin: 0 150px;
   height: auto;
@@ -120,16 +118,70 @@ nav li a:hover {
 }
 
 h3 {
-  margin-left:150px;
+  margin-left: 150px;
 }
 
 .project-details {
   margin: 50px 150px;
 }
+
 .project-info img {
-  max-height: 300px;
-  margin: 20px 150px;
+  max-height: 600px;
+  margin: 50px 150px;
 }
+
+.goal-section {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto auto 150px;
+  height: auto;
+  align-items: center;
+}
+
+.goal-section img {
+max-height: 500px;
+margin: 0px;
+}
+
+.goal-text {
+  flex-basis: 100%;
+  margin-left: 50px;
+}
+.goal-text h3 {
+  margin-left: 20px;
+}
+.goal-text p {
+  margin-left: 20px;
+}
+
+.next {
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #df9dfe;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.next:hover {
+  color: #D071FD;
+  font-size: 18px;
+}
+
+.next:hover path {
+  fill: #D071FD;
+}
+
+.next svg {
+  margin-right: 8px;
+  transform: rotate(180deg);
+}
+
 
 
 footer {
