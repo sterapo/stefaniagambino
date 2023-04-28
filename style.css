@@ -96,6 +96,8 @@ nav li a:hover {
 }
 
 .hero-text {
+  width: 85%;
+  display: block;
   margin-right: 50px;
   color: #F2F1ED;
 }
@@ -145,8 +147,8 @@ nav li a:hover {
 
 .hero-text p {
   font-size: 18px;
-  line-height: 1.2;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
  .hero-text button {
