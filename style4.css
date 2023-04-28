@@ -90,6 +90,7 @@ nav li a:hover {
 
 .back-to-home:hover {
   color: #D071FD;
+  font-size: 18px;
 }
 
 .back-to-home:hover path {
@@ -132,7 +133,6 @@ h3 {
   max-height: 300px;
   margin-right: 10px;
 }
-
 
 footer {
   background-color: #0D2D20;

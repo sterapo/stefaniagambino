@@ -91,6 +91,7 @@ nav li a:hover {
 
 .back-to-home:hover {
   color: #D071FD;
+  font-size: 18px;
 }
 
 .back-to-home:hover path {
@@ -127,11 +128,44 @@ h3 {
 .project-details {
   margin: 50px 150px;
 }
+.project-info ul li {
+  margin: 50px 150px;
+}
+
 .project-info img {
   max-height: 1000px;
   max-width: 900px;
   margin: 20px 150px;
 }
+
+.next {
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #df9dfe;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.next:hover {
+  color: #D071FD;
+  font-size: 18px;
+}
+
+.next:hover path {
+  fill: #D071FD;
+}
+
+.next svg {
+  margin-right: 8px;
+  transform: rotate(180deg);
+}
+
 
 
 footer {
