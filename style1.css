@@ -85,7 +85,6 @@ nav li a:hover {
   margin-left: 85px;
   color: #df9dfe;
   cursor: pointer;
-  text-transform: lowercase;
 }
 
 .back-to-home:hover {
