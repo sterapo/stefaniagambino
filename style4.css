@@ -139,56 +139,10 @@ footer {
   color: #F2F1ED;
   text-align: right;
   padding: 20px 85px 20px 20px;
-}
-
-
-
-@media screen and (max-width: 768px) {
-nav {
-flex-direction: column;
-padding: 10px;
-}
-
-nav ul {
-flex-direction: column;
-align-items: center;
-}
-
-nav li {
-margin: 10px 0;
-}
-
-.logo img {
-width: 100%;
-}
-
-#page1 {
-flex-direction: column;
-padding: 80px 10px;
-}
-
-.back-to-home {
-margin-left: 10px;
-}
-
-.project-info {
-margin: 0 20px;
-}
-
-.project-info h2, .project-year, h3, .project-description, .project-details {
-margin: 20px 10px;
-}
-
-.project-description {
-margin-bottom: 40px;
-}
-
-.project-info img {
-margin-right: 0;
-margin-bottom: 10px;
-}
-
-footer {
-padding: 20px 10px 20px 20px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
 }
 }
