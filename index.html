@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Landing Page</title>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap">
     <script src="https://kit.fontawesome.com/257a27ea04.js" crossorigin="anonymous"></script>
@@ -40,11 +41,11 @@
 
 
     <section id="about">
-  <div class="about-container">
-    <div class="about-image">
+  <div class="about-row">
+    <div class="col-left">
       <img src="Images/me.png" alt="image description">
     </div>
-    <div class="about-text">
+    <div class="col-right">
       <h2>About me</h2>
       <p> My name is Stefania and I am a <b>Digital Designer</b> specializing in UX/UI design. I have expertise in graphic design, discovery, wireframing, prototyping, user testing and I am committed to delivering exceptional user experiences that solve complex problems.
          <br><br>
@@ -98,8 +99,8 @@
 </section>
 <section id="contact">
   <h2 style="text-align:center;">Contatti</h2>
-  <div class="contact-container">
-    <div class="form-container">
+  <div class="contact-row">
+    <div class="col-left">
       <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -117,7 +118,7 @@
 
       </form>
     </div>
-    <div class="contact-info">
+    <div class="col-right">
       <img src="Images/phone.png" alt="Contact image">
       <p>Phone: +39 3282362741</p>
       <p>Email: stegambino91@gmail.com</p>
@@ -152,5 +153,5 @@
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("message").value = "";
-});  
+});
   </script>
