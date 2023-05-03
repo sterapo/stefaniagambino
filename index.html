@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="Images/favicon.ico" />
   </head>
   <body>
+
     <header>
     <nav id="navbar">
       <div class="logo">
@@ -29,15 +30,15 @@
 
 
     <section id="hero">
-    <div class="hero-content">
-     <div class="hero-text">
-      <h1>I design unique<br></h1>
+    <div class="hero-row">
+     <div class="hero-col-left">
+      <h1>I design unique</h1>
       <h1 style="color:#4ABEA1">experiences<br></h1>
       <h1>for unique brands</h1>
-      <p>I am a UX/UI Designer who combines creativity and strategy to achieve exceptional results.</p>
+      <p>I am a UX/UI Designer who combines creativity and strategy <br>to achieve exceptional results.</p>
       <button><a href="#contact">Let's work together</a></button>
      </div>
-     <div class="hero-images">
+     <div class="hero-col-right">
       <img class="hero-static-image" src="Images/bg.png" alt="Hero Static Image">
       <img class="hero-floating-image" src="Images/bg-floating.png" alt="Hero Floating Image">
      </div>
@@ -151,7 +152,7 @@ navbarToggle.addEventListener('click', () => {
 
 
     <script>
-    const titles = document.getElementsByClassName('hero-text')[0].getElementsByTagName('h1');
+    const titles = document.getElementsByClassName('hero-col-left')[0].getElementsByTagName('h1');
 
     setInterval(() => {
       if (titles[1].textContent === 'experiences') {
@@ -163,6 +164,7 @@ navbarToggle.addEventListener('click', () => {
       }
     }, 2000);
   </script>
+
   <script>
   document.querySelector(".cancel-button").addEventListener("click", function() {
   document.getElementById("name").value = "";
