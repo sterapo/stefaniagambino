@@ -15,12 +15,8 @@
       <div class="logo">
         <a href="#hero"><img src="Images/logo.png" alt="logo abstract, letter S" loading="lazy"></a>
       </div>
-      <div class="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu">
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <ul class="menu ">
         <li><a href="#about">About me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -141,13 +137,14 @@
 </footer>
 
 <script>
-const navbarToggle = document.querySelector('.toggle');
-const navbarMenu = document.querySelector('.menu');
+function toggleMenu(){
+const toggleMenu = document.querySelector('.toggleMenu');
+const menu = document.querySelector('.menu');
 
-navbarToggle.addEventListener('click', () => {
-  navbarToggle.classList.toggle('active');
-  navbarMenu.classList.toggle('active');
-});
+toggleMenu.classList.toggle('active');
+menu.classList.toggle('active');
+
+}
 </script>
 
 
