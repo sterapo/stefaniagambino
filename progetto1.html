@@ -2,23 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style1.css">
     <title>Nevecosmetics</title>
     <link rel="shortcut icon" href="Images/favicon.ico" />
   </head>
   <body>
+
     <header>
-      <nav>
-        <div class="logo" >
-            <a href="index.html#hero"><img src="Images/logo.png" alt="logo abstract, letter S" loading="lazy"></a>
-        </div>
-        <ul>
-          <li><a href="index.html#about">About me</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav id="navbar">
+      <div class="logo">
+        <a href="index.html#hero"><img src="Images/logo.png" alt="logo abstract, letter S" loading="lazy"></a>
+      </div>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <ul class="menu ">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
     <div id="page1" >
     <div class="project-info">
 
@@ -74,3 +77,22 @@
     </footer>
   </body>
 </html>
+
+
+<script>
+function toggleMenu() {
+  const toggleMenu = document.querySelector('.toggleMenu');
+  const menu = document.querySelector('.menu');
+  const links = document.querySelectorAll('.menu li a');
+
+  toggleMenu.classList.toggle('active');
+  menu.classList.toggle('active');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMenu.classList.remove('active');
+      menu.classList.remove('active');
+    });
+  });
+}
+</script>

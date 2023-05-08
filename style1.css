@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   background-color: #F2F1ED;
 }
@@ -35,16 +35,26 @@ header {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 85px;
+  background-color: #0D2D20;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
-  margin: 0;
-  padding: 10px 85px;
+  z-index: 4;
+}
+.menu{
+  display: inline-flex;
 }
 
-.logo img{
-    width: 60%;
+.logo img {
+  max-width: 45px;
+  height:auto;
 }
 
 nav ul {
@@ -67,11 +77,10 @@ nav li a:hover {
 
 #page1 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: auto;
-  padding:130px 0px;
+  padding:0;
   position: relative;
 }
 
@@ -100,15 +109,15 @@ nav li a:hover {
   margin-right: 8px;
 }
 
-
-/* Project info */
 .project-info {
-  margin: 0 150px;
   height: auto;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
-.project-info h2 {
+h2 {
   margin-left: 150px;
+  font-size: 36px;
 }
 
 .project-year {
@@ -121,6 +130,7 @@ nav li a:hover {
 
 h3 {
   margin-left:150px;
+  font-size: 28px;
 }
 
 .project-details {
@@ -133,12 +143,15 @@ h3 {
   margin: 20px 150px;
 }
 
-goal-section {
+.goal-section {
   display: flex;
   flex-direction: row;
   margin: 50px auto auto 150px;
   height: auto;
   align-items: center;
+}
+#page1 ul{
+  margin: 50px 150px;
 }
 
 .next {
@@ -175,4 +188,90 @@ footer {
   color: #F2F1ED;
   text-align: right;
   padding: 20px 85px 20px 20px;
+}
+@media (max-width: 900px) {
+  #navbar {
+      padding: 10px 20px;
+      max-width: 100%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .toggleMenu {
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+
+    .toggleMenu::before {
+      margin-left: 10px;
+      content: '\f0c9';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: #F2F1ED;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      display: block;
+    }
+    .toggleMenu.active::before {
+      content: '\f00d';
+    }
+
+    .menu.active {
+      display: block;
+      position: fixed;
+      top: 75px;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: calc(100% - 75px);
+      background-color: #0D2D20;
+      z-index: 9998;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .menu.active::-webkit-scrollbar {
+      display: none;
+    }
+
+    .menu.active li {
+      padding: 20px 0;
+      margin-left: 0;
+      border-bottom: none;
+    }
+
+    .menu.active li:last-child {
+      border-bottom: none;
+    }
+
+    .menu.active li.close {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .menu.active li.close a {
+      color: #333;
+    }
+
+
+
+#page1{
+    margin-top: 100px;
+    display: block;
+  }
+
+footer{
+
+  text-align: center;
+  align-items: center;
+}
 }
