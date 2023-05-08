@@ -311,6 +311,7 @@ flex: auto;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 100px;
+  color: #0D2D20;
 }
 
 .contact-row {
@@ -432,61 +433,113 @@ footer {
 
 
 @media (max-width: 900px) {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 #navbar {
     padding: 10px 20px;
   }
 
-.toggleMenu {
-position: absolute;
-right: 5%;
-background-image: url(Images/apri.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: 30px;
-width: 30px;
-height: 30px;
-padding: 2em;
-z-index: 5;
-transition: background-size 0.3s ease-in-out;
-}
 
-.toggleMenu.active{
-  position: fixed;
-  background-image: url(Images/chiudi.png);
-  background-size: 25px;
+  .menu {
+    display: none;
+  }
 
-}
+  /* Mostra l'icona del menu toggle */
+  .toggleMenu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
 
-.menu {
-justify-content: center;
-align-items: center;
-flex-direction: column;
-max-height: 0;
-opacity: 0;
-transform-origin: top;
-transform: scale(1,0);
-  z-index: 4;
-}
-.menu.active {
-  position: fixed;
-  inset:0;
-  margin: auto;
-  max-height: 100%;
-  background-color: black;
-  transition: scale(1, 1);
+  /* Aggiungi l'icona del menu */
+  .toggleMenu::before {
+    content: '\f0c9';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #F2F1ED;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+  }
 
-}
+  /* Aggiungi la classe "active" al menu toggle */
+  .toggleMenu.active::before {
+    content: '\f00d';
+  }
+
+  /* Mostra la lista del menu quando il menu toggle è attivo */
+  .menu.active {
+    display: block;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: calc(100% - 75px);
+    background-color: #0D2D20;
+    z-index: 9998;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  /* Nascondi la scrollbar orizzontale del menu */
+  .menu.active::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Stile per i link del menu */
+  .menu.active li {
+    padding: 20px 0;
+    margin-left: 0;
+    border-bottom: none;
+
+  }
+
+  /* Stile per il link "chiudi" del menu */
+  .menu.active li:last-child {
+    border-bottom: none;
+  }
+
+  /* Stile per il link "chiudi" del menu */
+  .menu.active li.close {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  /* Stile per il link "chiudi" del menu */
+  .menu.active li.close a {
+    color: #333;
+  }
+
+
+
+
+
 
 #hero {
   background-position: center left;
   background-size: cover;
+align-items: center;
+text-align: left;
 }
 
   .hero-row {
     flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
     height: 100vh;
   }
 
@@ -514,7 +567,9 @@ transform: scale(1,0);
   }
 
 
-
+#about {
+  height: auto;
+}
   #about .col-left,
   .col-right {
   width: 100%;
@@ -526,6 +581,7 @@ transform: scale(1,0);
 
   #about .col-left img {
     margin-bottom: 50px;
+    padding: 0 30px;
     width: 100%;
   }
   #portfolio
@@ -566,7 +622,7 @@ padding-top: 50px;
   }
   footer {
     font-size: 14px;
-    padding-right: 50px;
+    padding: 20px;
     align-items: center;
     text-align: center;
   }
