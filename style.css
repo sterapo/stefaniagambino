@@ -140,7 +140,7 @@ nav li a:hover {
   line-height: 1.5;
 }
 
- #hero button {
+#hero button {
   background-color:#DF9DFE;
   color: #0D2D20;
   border: none;
@@ -150,11 +150,11 @@ nav li a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
- #hero button:hover
+#hero  button:hover
 {
   background-color:#D071FD;
 }
-#hero button a {
+ #hero button a {
   color: inherit;
   text-decoration: none;
   position: relative;
@@ -194,24 +194,24 @@ flex: auto;
 }
 
 #about .col-right h2 {
-  font-size: 36px;
+  font-size: 2,25em;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
 #about .col-right p {
   text-align: left;
-  font-size: 18px;
+  font-size: 1,125em;
   line-height: 1.2;
 }
 
 #about .col-right button {
-  margin-top: 30px;
+  margin-top: 1,87em;
   background-color: #DF9DFE;
   color: #0D2D20;
   border: none;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 1.25em;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -234,7 +234,7 @@ flex: auto;
 }
 
 #portfolio h2 {
-  font-size: 36px;
+  font-size: 2,25em;
   font-weight: bold;
   margin-bottom: 100px;
   color: #F2F1ED;
@@ -288,7 +288,7 @@ flex: auto;
 
 .card-info h3 {
   margin: 0;
-  font-size: 24px;
+  font-size: 1,5em;
   font-weight: bold;
   margin-bottom: 10px;
   color: #f1efe6;
@@ -296,7 +296,7 @@ flex: auto;
 
 .card-info p {
   margin: 0;
-  font-size: 18px;
+  font-size: 1,25em;
   line-height: 1.2;
   color: #f1efe6;
 }
@@ -308,7 +308,7 @@ flex: auto;
   padding: 100px 0px;
 }
 #contact h2 {
-  font-size: 36px;
+  font-size: 2,25em;
   font-weight: bold;
   margin-bottom: 100px;
 }
@@ -332,7 +332,7 @@ form {
 }
 
 label {
-  font-size: 18px;
+  font-size: 1,125em;
   margin-bottom: 10px;
 }
 
@@ -355,29 +355,36 @@ textarea {
   justify-content: space-between;
   margin-top: 20px;
 }
-
-.cancel-button {
-  border: 2px solid #DF9DFE;
-  color: #0D2D20;
+.form-buttons button {
   padding: 10px 20px;
-  font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
 }
 
+.cancel-button {
+  border: 2px solid #DF9DFE;
+  color: #0D2D20;
+  font-size: 1.25em;
+}
+
 .send-button {
-  background-color:#DF9DFE;
+  background-color: #DF9DFE;
   color: #0D2D20;
   border: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 10px;
-  cursor: pointer;
+  font-size: 1.25em;
 }
 
 button:hover {
   background-color: #D071FD;
 }
+
+button a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
 
 #contact .col-right img{
   text-align: center;
@@ -388,7 +395,7 @@ button:hover {
 }
 
 #contact .col-right p {
-  font-size: 18px;
+  font-size: 1,125em;
   line-height: 1.2;
   margin-bottom: 10px;
   text-align: center;
@@ -417,7 +424,7 @@ footer {
   background-color: #0D2D20;
   color: #F2F1ED;
   text-align: right;
-  font-size: 18px;
+  font-size: 1.125em;
   padding: 20px 85px 20px 20px;
 }
 
@@ -499,23 +506,16 @@ transform: scale(1,0);
 
 
   .hero-col-right .hero-floating-image {
-    position: absolute;
-    top: 50%;
-    right: -50px;
-    transform: translateY(-50%);
-    width: 500px;
-    height: auto;
-    z-index: 2;
-    background-attachment: scroll;
+    display: none;
   }
 
   #about .col-left,
   .col-right {
   width: 100%;
   }
-  .about-row {
+  #about .about-row {
     height: auto;
-    padding: 0 20px;
+    padding: 50px 20px;
   }
 
   #about .col-left img {
@@ -535,7 +535,7 @@ padding-top: 50px;
   }
   .contact-row {
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 20px;
   }
   #contact .col-left,
   .col-right {
