@@ -66,7 +66,6 @@ nav li a:hover {
 }
 
 
-
 #hero {
   display: flex;
   justify-content: space-between;
@@ -104,10 +103,10 @@ nav li a:hover {
 
 
 .hero-col-right .hero-floating-image {
-  width: 90%;
+  width: 70%;
   position: absolute;
   top: 50%;
-  left: 350px;
+  left: 54%;
   transform: translate(-50%, -50%);
   z-index: 1;
   animation: float 5s ease-in-out infinite;
@@ -326,6 +325,8 @@ flex: auto;
 .col-right {
  width: 48%;
 }
+.col-right {
+ margin-left: 40px;}
 
 form {
   display: flex;
@@ -433,23 +434,16 @@ footer {
 
 
 @media (max-width: 900px) {
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
 #navbar {
     padding: 10px 20px;
+    max-width: 100%;
   }
-
 
   .menu {
     display: none;
   }
 
-  /* Mostra l'icona del menu toggle */
   .toggleMenu {
     display: block;
     width: 40px;
@@ -461,24 +455,21 @@ footer {
     cursor: pointer;
   }
 
-  /* Aggiungi l'icona del menu */
   .toggleMenu::before {
+    margin-left: 10px;
     content: '\f0c9';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #F2F1ED;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 40px;
     text-align: center;
     display: block;
   }
-
-  /* Aggiungi la classe "active" al menu toggle */
   .toggleMenu.active::before {
     content: '\f00d';
   }
 
-  /* Mostra la lista del menu quando il menu toggle è attivo */
   .menu.active {
     display: block;
     position: fixed;
@@ -493,76 +484,54 @@ footer {
     padding: 20px;
   }
 
-  /* Nascondi la scrollbar orizzontale del menu */
   .menu.active::-webkit-scrollbar {
     display: none;
   }
 
-  /* Stile per i link del menu */
   .menu.active li {
     padding: 20px 0;
     margin-left: 0;
     border-bottom: none;
-
   }
 
-  /* Stile per il link "chiudi" del menu */
   .menu.active li:last-child {
     border-bottom: none;
   }
 
-  /* Stile per il link "chiudi" del menu */
   .menu.active li.close {
     text-align: right;
     font-weight: bold;
     margin-top: 20px;
   }
-
-  /* Stile per il link "chiudi" del menu */
   .menu.active li.close a {
     color: #333;
   }
 
 
 
-
-
-
 #hero {
-  background-position: center left;
-  background-size: cover;
+  background-image: url(Images/gb-mobile.png);
 align-items: center;
 text-align: left;
 }
 
   .hero-row {
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 50px;
+    padding: 0;
     height: 100vh;
   }
-
-  .hero-col-left {
+ .hero-col-left {
     position: absolute;
-    top:50px;
+    top:20%;
     max-width: 100%;
     order: 1;
-    margin-top: 100px;
-    margin-right: 0;
-    margin-bottom: 50px;
   }
   #hero h1{
-  font-size: 2.5em; }
+  font-size: 2.2em; }
   #hero p{
-  font-size: 15px; }
+  display: none;}
 
-  .hero-col-right {
-    padding-right: 0;
-    max-width: 100%;
-    order: 2;
-  }
-  .hero-col-right .hero-floating-image {
+  .hero-col-right  {
     display: none;
   }
 
@@ -570,9 +539,15 @@ text-align: left;
 #about {
   height: auto;
 }
+#about h2{
+  text-align: center;
+}
   #about .col-left,
   .col-right {
   width: 100%;
+  }
+  #about .col-right{
+    margin-left: 0;
   }
   #about .about-row {
     height: auto;
@@ -606,6 +581,7 @@ padding-top: 50px;
 
   #contact  .col-right {
     order: -1;
+    margin: 0;
   }
   #contact  .col-right img{
     margin: 30px 50px;
