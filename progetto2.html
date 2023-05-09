@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="style2.css">
     <title>Cascina Rossana</title>
     <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap">
+    <script src="https://kit.fontawesome.com/257a27ea04.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/favicon.ico" />
   </head>
   <body>
     <header>
@@ -14,9 +18,9 @@
       </div>
       <div class="toggleMenu" onclick="toggleMenu();"></div>
       <ul class="menu ">
-        <li><a href="#about">About me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#about">About me</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -66,3 +70,21 @@
     </footer>
   </body>
 </html>
+
+<script>
+function toggleMenu() {
+  const toggleMenu = document.querySelector('.toggleMenu');
+  const menu = document.querySelector('.menu');
+  const links = document.querySelectorAll('.menu li a');
+
+  toggleMenu.classList.toggle('active');
+  menu.classList.toggle('active');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMenu.classList.remove('active');
+      menu.classList.remove('active');
+    });
+  });
+}
+</script>

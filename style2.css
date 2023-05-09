@@ -1,4 +1,4 @@
-/* Global styles */
+
 * {
   box-sizing: border-box;
 }
@@ -165,11 +165,152 @@ h3 {
   transform: rotate(180deg);
 }
 
-
-
 footer {
   background-color: #0D2D20;
   color: #F2F1ED;
   text-align: right;
   padding: 20px 85px 20px 20px;
 }
+
+@media screen and (max-width: 900px) {
+
+  #navbar {
+      padding: 10px 20px;
+      max-width: 100%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .toggleMenu {
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+
+    .toggleMenu::before {
+      margin-left: 10px;
+      content: '\f0c9';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: #F2F1ED;
+      font-size: 24px;
+      line-height: 40px;
+      text-align: center;
+      display: block;
+    }
+    .toggleMenu.active::before {
+      content: '\f00d';
+    }
+
+    .menu.active {
+      display: block;
+      position: fixed;
+      top: 45px;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: calc(100% - 75px);
+      background-color: #0D2D20;
+      z-index: 9998;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .menu.active::-webkit-scrollbar {
+      display: none;
+    }
+
+    .menu.active li {
+      font-size: 24px;
+      padding: 20px 0;
+      margin-left: 0;
+      border-bottom: none;
+    }
+
+    .menu.active li:last-child {
+      border-bottom: none;
+    }
+
+    .menu.active li.close {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .menu.active li.close a {
+      color: #333;
+    }
+
+  #page1 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    height: auto;
+    text-align: center;
+  }
+  
+
+  .back-to-home {
+    margin-left: 20px;;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+ .project-info {
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+
+  .project-info h2 {
+    margin-left: 50px;
+    font-size: 30px;
+  }
+
+  .project-year {
+    margin-left: 50px;
+  }
+
+  .project-description {
+    margin: 30px 50px;
+  }
+
+  h3 {
+    margin-left: 50px;
+    font-size: 24px;
+  }
+  p{
+    margin-left: 50px;
+    font-size: 18px;
+  }
+#page1 li{
+  margin-right: 50px;
+margin-left: 20px;}
+
+  .project-details {
+    margin: 30px 50px;
+  }
+
+  .project-info img {
+    max-height: 200px;
+    margin: 20px;}
+
+
+    .next{
+      position: absolute;
+      right: 20px;
+      bottom: -60px;
+      font-size: 18px;
+    }
+
+    footer p{
+      font-size: 14px;
+    }
+    footer{
+      width: 100%;
+    }
+  }
