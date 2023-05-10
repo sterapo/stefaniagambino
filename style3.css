@@ -70,9 +70,16 @@ nav li a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  text-align: center;
   height: auto;
   padding: 130px 0px;
   position: relative;
+}
+#page1 img{
+  max-width: 500px;
+}
+#page1 h2,h3,p,ul{
+  text-align: left;
 }
 
 .back-to-home {

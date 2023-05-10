@@ -69,10 +69,17 @@ nav li a:hover {
 #page1 {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   width: 100%;
   height: auto;
   padding:130px 0px;
   position: relative;
+}
+#page1 img{
+  width: 500px;
+}
+#page1 h2,h3,p,ul{
+  text-align: left;
 }
 
 /* Back to home button */

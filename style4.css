@@ -69,10 +69,18 @@ nav li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: auto;
   padding:130px 0px;
   position: relative;
+}
+#page1 h2,h3,p,ul{
+  text-align: left;
+}
+
+#page1 ul{
+  padding-left:40px;
 }
 
 /* Back to home button */
@@ -127,11 +135,9 @@ h3 {
 .project-details {
   margin: 50px 150px;
 }
-.project-info img {
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 300px;
-  margin-right: 10px;
+#page1 img {
+  max-height: 500px;
+
 }
 
 footer {

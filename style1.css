@@ -83,13 +83,14 @@ nav li a:hover {
   margin-top: 150px;
   position: relative;
   justify-content: center;
-text-align: center;
-margin-bottom: 80px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 #page1 h2,h3,p,ul {
   text-align: left;
 }
+
 
 .back-to-home {
   background-color: transparent;
@@ -280,6 +281,8 @@ footer p{
     margin-bottom: 100px;
     height: auto;
   }
+  #page1 h2,h3,p,ul
+  { margin-left: 0;}
 
   .back-to-home {
     margin-left: 20px;;
@@ -287,43 +290,38 @@ footer p{
     font-size: 18px;
   }
  .project-info {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  }
+  #page1 img{
+    max-width: 500px;
+    margin: 20px;
   }
 
   h2 {
-    margin-left: 50px;
     font-size: 30px;
   }
 
-  .project-year {
-    margin-left: 50px;
-  }
-
   .project-description {
-    margin: 30px 50px;
+    margin: 30px 0px;
   }
 
+  .project-year {
+    margin: 30px 0px;
+  }
   h3 {
-    margin-left: 50px;
     font-size: 24px;
   }
   p{
-    margin-left: 50px;
     font-size: 18px;
   }
 #page1 ul{
-
-  margin-left: 50px;
-  margin-right: 50px; }
+  margin-right: 50px;
+margin-left: 0;}
 
   .project-details {
-    margin: 30px 50px;
+    margin: 30px 0px;
   }
-
-  .project-info img {
-    max-height: 200px;
-    margin: 20px;}
 
   #page1  .video {
     justify-content: center;
