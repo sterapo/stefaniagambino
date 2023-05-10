@@ -81,6 +81,7 @@ nav li a:hover {
 
 #page1 ul{
   padding-left:40px;
+  margin-left: 150px;
 }
 
 /* Back to home button */
@@ -143,8 +144,10 @@ h3 {
 footer {
   background-color: #0D2D20;
   color: #F2F1ED;
-  text-align: right;
   padding: 20px 85px 20px 20px;
+}
+footer p{
+  text-align: right;
 }
 
 @media  (max-width: 900px) {
@@ -265,6 +268,9 @@ footer {
   margin-right: 0;
     margin-left: 0px;
     font-size: 18px;
+  }
+#page1 ul {
+    margin-left: 0;
   }
 #page1 li{
   margin-right: 0px;

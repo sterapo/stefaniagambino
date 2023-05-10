@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
-
 }
 
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   background-color: #F2F1ED;
 }
@@ -36,26 +35,16 @@ header {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  padding: 10px 85px;
-  background-color: #0D2D20;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 4;
-}
-.menu{
-  display: inline-flex;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px 85px;
 }
 
-.logo img {
-  max-width: 45px;
-  height:auto;
+.logo img{
+    width: 60%;
 }
 
 nav ul {
@@ -76,21 +65,26 @@ nav li a:hover {
   color: #DF9DFE;
 }
 
-
 #page1 {
   display: flex;
-  margin-top: 150px;
-  position: relative;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
-  margin-bottom: 80px;
+  width: 100%;
+  height: auto;
+  padding:130px 0px;
+  position: relative;
 }
-
-#page1 h2,h3,p,ul {
+#page1 h2,h3,p,ul{
   text-align: left;
 }
 
+#page1 ul{
+  padding-left:40px;
+  margin-left: 150px;
+}
 
+/* Back to home button */
 .back-to-home {
   background-color: transparent;
   border: none;
@@ -115,15 +109,15 @@ nav li a:hover {
   margin-right: 8px;
 }
 
+
+/* Project info */
 .project-info {
+  margin: 0 150px;
   height: auto;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
-h2 {
+.project-info h2 {
   margin-left: 150px;
-  font-size: 36px;
 }
 
 .project-year {
@@ -136,34 +130,19 @@ h2 {
 
 h3 {
   margin-left:150px;
-  font-size: 28px;
 }
+
 
 .project-details {
   margin: 50px 150px;
 }
-
-
-.project-info img {
-  max-height: 300px;
-  margin: 20px 150px;
+#page1 img {
+  max-height: 500px;
 }
-
-.goal-section {
-  display: flex;
-  flex-direction: row;
-  margin: 50px auto auto 150px;
-  height: auto;
-  align-items: center;
-}
-#page1 ul{
-  margin: 50px 150px;
-}
-
 .next {
   position: absolute;
-  bottom: -30px;
-  right: 180px;
+  bottom: 80px;
+  right: 150px;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -187,17 +166,22 @@ h3 {
   margin-right: 8px;
   transform: rotate(180deg);
 }
-
-
-footer p{
-  background-color: #0D2D20;
-  color: #F2F1ED;
-  text-align: right;
-  padding: 20px 85px 20px 20px;
-  margin: 0;
+#page1 video{
+  margin: 20px 0px;
+  height: 500px;
+  width: auto;
 }
 
-@media screen and (max-width: 900px) {
+footer {
+  background-color: #0D2D20;
+  color: #F2F1ED;
+  padding: 20px 85px 20px 20px;
+}
+footer p{
+  text-align: right;
+}
+
+@media  (max-width: 900px) {
 
   #navbar {
       padding: 10px 20px;
@@ -274,73 +258,111 @@ footer p{
 
   #page1 {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
+    display: block;
+    margin-top: 20px;
     margin-bottom: 100px;
     height: auto;
-  }
-  #page1 h2,h3,p,ul
-  { margin-left: 0;}
-
-  .back-to-home {
-    margin-left: 20px;;
-    margin-top: 20px;
-    font-size: 18px;
-  }
- .project-info {
-  margin-left: 25px;
-  margin-right: 25px;
+    padding-bottom: 0;
   }
   #page1 img{
     max-width: 500px;
-    margin: 20px;
   }
 
-  h2 {
+
+  .back-to-home {
+    margin-right: 0;
+    margin-left: 0px;;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 0;
+  }
+ #page1 .project-info {
+  margin-left: 25px;
+  margin-right: 25px;
+  }
+
+  .project-info h2 {
+    margin-left: 0px;
     font-size: 30px;
+  }
+
+  .project-year {
+    margin-left: 0px;
   }
 
   .project-description {
     margin: 30px 0px;
   }
 
-  .project-year {
-    margin: 30px 0px;
-  }
   h3 {
+    margin-right: 0;
+    margin-left: 0px;
     font-size: 24px;
   }
-  p{
+#page1  p{
+  margin-right: 0;
+    margin-left: 0px;
     font-size: 18px;
   }
+#page1 li{
+  margin-right: 0px;
+  font-size: 18px;
+margin-left: 0px;}
 #page1 ul{
-  margin-right: 50px;
-margin-left: 0;}
+  margin-left: 0;
+}
 
   .project-details {
-    margin: 30px 0px;
+    margin: 30px 50px;
   }
 
-  #page1  .video {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  padding-bottom: 50px;
-margin-left: 20px;}
+  #page1 .project-info img {
+    max-width: 100%;
+    margin: 20px 0;}
 
+    .goal-section {
+        flex-direction: column;
+        text-align: center;
+      margin-left: 0;
+    text-align: left;}
 
-    .next{
+    .goal-section h3{
+      margin-left: 0;
+    }
+ #page1 .goal-section img {
+    width: 80%;
+    }
+
+   .goal-text {
+   margin: 25px 0;
+}
+#page1 .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #page1  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+    .next {
       position: absolute;
       right: 20px;
       bottom: -60px;
       font-size: 18px;
     }
+  #page1   video{
+      max-width: 260px;
+      height: auto;
+    }
 
     footer p{
       font-size: 14px;
+      text-align: center;
     }
     footer{
+      padding: 20px;
       width: 100%;
     }
   }

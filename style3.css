@@ -75,7 +75,7 @@ nav li a:hover {
   position: relative;
 }
 #page1 img{
-  max-width: 500px;
+  max-width: 700px;
 }
 #page1 h2,h3,p,ul{
   text-align: left;
@@ -132,7 +132,7 @@ h3 {
 }
 
 .project-info img {
-  max-height: 600px;
+  max-height: 700px;
   margin: 50px 150px;
 }
 
@@ -158,6 +158,18 @@ margin: 0px;
 }
 .goal-text p {
   margin-left: 20px;
+}
+.image-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .next {
@@ -193,8 +205,10 @@ margin: 0px;
 footer {
   background-color: #0D2D20;
   color: #F2F1ED;
-  text-align: right;
   padding: 20px 85px 20px 20px;
+}
+footer p{
+  text-align: right;
 }
 
 
@@ -282,6 +296,9 @@ footer {
     flex-direction: column;
     padding-bottom: 0;
   }
+  #page1 img{
+    max-width: 500px;
+  }
 
 
   .back-to-home {
@@ -340,13 +357,22 @@ margin-left: 0px;}
     .goal-section h3{
       margin-left: 0;
     }
-    .goal-section img {
-    width: 300px;
+ .goal-section img {
+    width: 80%;
     }
 
    .goal-text {
    margin: 25px 0;
 }
+#page1 .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #page1  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
     .next {
       position: absolute;
