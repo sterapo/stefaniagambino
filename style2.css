@@ -76,7 +76,8 @@ nav li a:hover {
   position: relative;
 }
 #page1 img{
-  width: 500px;
+  margin: 20px 0;
+  max-width: 500px;
 }
 #page1 h2,h3,p,ul{
   text-align: left;
@@ -137,11 +138,7 @@ h3 {
   margin: 50px 150px;
 }
 
-.project-info img {
-  max-height: 1000px;
-  max-width: 900px;
-  margin: 20px 150px;
-}
+
 
 .next {
   position: absolute;

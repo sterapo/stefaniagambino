@@ -145,11 +145,6 @@ footer {
   color: #F2F1ED;
   text-align: right;
   padding: 20px 85px 20px 20px;
-  font-size: 14px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width:100%;
 }
 
 @media  (max-width: 900px) {
