@@ -69,7 +69,6 @@ nav li a:hover {
 #page1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: auto;
   padding:130px 0px;
@@ -172,7 +171,7 @@ footer {
   padding: 20px 85px 20px 20px;
 }
 
-@media screen and (max-width: 900px) {
+@media  (max-width: 900px) {
 
   #navbar {
       padding: 10px 20px;
@@ -252,22 +251,24 @@ footer {
     margin-top: 20px;
     margin-bottom: 100px;
     height: auto;
-    text-align: center;
+    flex-direction: column;
+    padding-bottom: 0;
   }
-  
+
 
   .back-to-home {
-    margin-left: 20px;;
+    margin-right: 0;
+    margin-left: 0px;;
     margin-top: 20px;
     font-size: 18px;
   }
  .project-info {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   }
 
   .project-info h2 {
-    margin-left: 50px;
+    margin-left: 0px;
     font-size: 30px;
   }
 
@@ -280,27 +281,30 @@ footer {
   }
 
   h3 {
-    margin-left: 50px;
+    margin-right: 0;
+    margin-left: 0px;
     font-size: 24px;
   }
-  p{
-    margin-left: 50px;
+#page1  p{
+  margin-right: 0;
+    margin-left: 0px;
     font-size: 18px;
   }
 #page1 li{
-  margin-right: 50px;
-margin-left: 20px;}
+  margin-right: 0px;
+  font-size: 18px;
+margin-left: 0px;}
 
   .project-details {
     margin: 30px 50px;
   }
 
   .project-info img {
-    max-height: 200px;
-    margin: 20px;}
+    max-width: 100%;
+    margin: 20px 0;}
 
 
-    .next{
+    .next {
       position: absolute;
       right: 20px;
       bottom: -60px;
@@ -309,8 +313,10 @@ margin-left: 20px;}
 
     footer p{
       font-size: 14px;
+      text-align: center;
     }
     footer{
+      padding: 20px;
       width: 100%;
     }
   }
