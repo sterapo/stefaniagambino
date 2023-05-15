@@ -26,7 +26,7 @@
 
 
     <section id="hero">
-    <div class="hero-row">
+    <div class="container2">
      <div class="hero-col-left">
       <h1>I design unique</h1>
       <h1 style="color:#4ABEA1">experiences<br></h1>
@@ -35,7 +35,10 @@
       <button><a href="#contact">Let's work together</a></button>
      </div>
      <div class="hero-col-right">
-      <img class="hero-floating-image" src="Images/bg-floating.png" alt="Floating object,message,flower,magnifying glass">
+       <div class="image-container">
+         <img class="hero-image" src="Images/bg2.png" alt="Floating object,message,flower,magnifying glass">
+         <img class="hero-floating-image" src="Images/bg-floating2.png" alt="Floating object,message,flower,magnifying glass">
+       </div>
      </div>
   </div>
 </section>
@@ -100,7 +103,7 @@
 </section>
 <section id="contact">
   <h2 style="text-align:center;">Contatti</h2>
-  <div class="contact-row">
+  <div class="container">
     <div class="col-left">
       <form>
         <label for="name">Name:</label>
@@ -137,6 +140,20 @@
 
 </body>
 </html>
+
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").classList.add("scrolled");
+  } else {
+    document.getElementById("navbar").classList.remove("scrolled");
+  }
+}
+</script>
+
 
 <script>
 function toggleMenu() {
