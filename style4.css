@@ -136,9 +136,15 @@ h3 {
 .project-details {
   margin: 50px 150px;
 }
-#page1 img {
+.user_persona img {
   max-height: 500px;
-
+}
+.prototipo {
+  height: 900px;
+}
+.prototipo img {
+max-width: 976px;
+height: auto;
 }
 
 footer {
